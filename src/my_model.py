@@ -43,6 +43,7 @@ def get_model():
 
 def read_model():
     model = load_model(save_model_dir)
+    return model
     
 def save_model_checkpoints():
     return ModelCheckpoint(model_checkpoint_dir, 
